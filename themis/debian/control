@@ -1,0 +1,40 @@
+Source: themis
+Section: utils
+Priority: optional
+Maintainer: Miguel Gomes <miguel@example.com>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-all,
+               python3-setuptools
+Standards-Version: 4.6.0
+Homepage: https://github.com/miguel/themis
+Vcs-Browser: https://github.com/miguel/themis
+Vcs-Git: https://github.com/miguel/themis.git
+
+Package: themis
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3,
+         python3-gi,
+         python3-gi-cairo,
+         python3-xlib,
+         python3-pynput,
+         gir1.2-gtk-3.0,
+         gir1.2-wnck-3.0,
+         gir1.2-appindicator3-0.1
+Description: Themis - Window management for Linux, based on Rectangle for macOS
+ Themis is a window management application for Linux, inspired by and based 
+ on Rectangle for macOS. This is a specialized Linux version of Rectangle 
+ that works across all distributions including Fedora, providing powerful 
+ window management functionality.
+ .
+ Attribution: This code is a copy of Rectangle made specifically for Linux.
+ .
+ Features:
+  * Window snapping with keyboard shortcuts
+  * Drag-to-snap functionality
+  * Support for X11 and Wayland
+  * Cross-distribution compatibility
+  * Customizable keyboard shortcuts
+  * Quarter, half, and third window positioning

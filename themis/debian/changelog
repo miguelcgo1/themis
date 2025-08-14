@@ -1,0 +1,11 @@
+themis (1.0.0-1) unstable; urgency=medium
+
+  * Initial release - renamed from Rectangle Linux to Themis
+  * Support for X11 and Wayland
+  * Keyboard shortcuts for window management
+  * Drag-to-snap functionality
+  * Configuration GUI
+  * Cross-distribution compatibility
+  * Based on Rectangle for macOS
+
+ -- Miguel Gomes <miguel@example.com>  Wed, 14 Aug 2025 12:00:00 +0000

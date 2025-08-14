@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Themis
+GenericName=Window Manager
+Comment=Themis - Window management for Linux, based on Rectangle for macOS
+Exec=themis
+Icon=themis
+Terminal=false
+StartupNotify=false
+Categories=Utility;System;
+Keywords=window;manager;snap;tile;themis;rectangle;
+MimeType=

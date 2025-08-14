@@ -1,0 +1,5 @@
+PyGObject>=3.40.0
+pycairo>=1.20.0
+python-xlib>=0.31
+pynput>=1.7.0
+configparser>=5.0.0

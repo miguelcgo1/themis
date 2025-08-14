@@ -1,0 +1,37 @@
+# Maintainer: Miguel Gomes <miguel@example.com>
+pkgname=themis
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Themis - Window management for Linux, based on Rectangle for macOS"
+arch=('any')
+url="https://github.com/miguel/themis"
+license=('MIT')
+depends=(
+    'python'
+    'python-gobject'
+    'python-cairo'
+    'python-xlib'
+    'python-pynput'
+    'libwnck3'
+    'libappindicator-gtk3'
+)
+makedepends=(
+    'python-setuptools'
+    'python-build'
+    'python-installer'
+    'python-wheel'
+)
+source=("$pkgname-$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+    cd "$pkgname-$pkgver"
+    python -m build --wheel --no-isolation
+}
+
+package() {
+    cd "$pkgname-$pkgver"
+    python -m installer --destdir="$pkgdir" dist/*.whl
+}
+
+# vim:set ts=2 sw=2 et:
